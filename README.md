@@ -23,25 +23,25 @@ This API server was tried to be built restful.
 -   Dao: Data Access Object.
 
 ```
-├── config                              #
-│   ├── baseResponseStatus.js           # response status
-│   ├── database.js                     # setting database
-│   ├── express.js                      # setting express framework
-│   ├── jwtMiddleware.js                # jwt middle ware
-│   ├── secret.js                       # keys
-│   ├── winston.js                      # setting logger library
-├── log                                 # all logs
-├── node_modules                    	# 외부 라이브러리 폴더 (package.json 의 dependencies)
-├── src                     			#
-│   ├── app              				# apps
-│ 	│   ├── User            			# a folder about User domain
-│   │ 	│   ├── userDao.js          	# deal with query related User
-│ 	│ 	│   ├── userController.js 		# deal with req and res
-│ 	│ 	│   ├── userProvider.js   		# logics about R of CRUD
-│ 	│ 	│   ├── userService.js   		# logics about CUD of CRUD
-├── .gitignore                     		#
-├── index.js                            # starting file
-├── package-lock.json              	    #
-├── package.json                        # 프로그램 이름, 버전, 필요한 모듈 등 노드 프로그램의 정보를 기술
+├── config                                  #
+│   ├── baseResponseStatus.js               # response status
+│   ├── database.js                         # setting database
+│   ├── express.js                          # setting express framework
+│   ├── jwtMiddleware.js                    # jwt middle ware
+│   ├── secret.js                           # keys
+│   ├── winston.js                          # setting logger library
+├── log                                     # all logs
+├── node_modules                            #
+├── src                                     #
+│   ├── app                                 # apps
+│ 	│   ├── User                            # a folder about User domain
+│   │ 	│   ├── userDao.js                  # deal with query related User
+│ 	│ 	│   ├── userController.js           # deal with req and res
+│ 	│ 	│   ├── userProvider.js             # logics about R of CRUD
+│ 	│ 	│   ├── userService.js              # logics about CUD of CRUD
+├── .gitignore                              #
+├── index.js                                # starting file
+├── package-lock.json                       #
+├── package.json
 └── README.md
 ```
