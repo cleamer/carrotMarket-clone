@@ -1,4 +1,4 @@
-# Carrot Market Clon API Server
+# Carrot Market Clone API Server
 
 It's an API Server cloned carrot market using express module.
 I'm making carrot marcket WAS for learnig node.js, so there will be wrong codes.
