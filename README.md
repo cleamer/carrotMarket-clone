@@ -34,11 +34,11 @@ This API server was tried to be built restful.
 ├── node_modules                            #
 ├── src                                     #
 │   ├── app                                 # apps
-│ 	│   ├── User                            # a folder about User domain
-│   │ 	│   ├── userDao.js                  # deal with query related User
-│ 	│ 	│   ├── userController.js           # deal with req and res
-│ 	│ 	│   ├── userProvider.js             # logics about R of CRUD
-│ 	│ 	│   ├── userService.js              # logics about CUD of CRUD
+│   │   ├── User                            # a folder about User domain
+│   │   │   ├── userDao.js                  # deal with query related User
+│ 	│   │   ├── userController.js           # deal with req and res
+│ 	│   │   ├── userProvider.js             # logics about R of CRUD
+│ 	│   │   ├── userService.js              # logics about CUD of CRUD
 ├── .gitignore                              #
 ├── index.js                                # starting file
 ├── package-lock.json                       #
