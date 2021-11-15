@@ -1,8 +1,38 @@
 module.exports = {
-    // Success
-    SUCCESS: { isSuccess: true, code: 1000, message: "성공" },
+    // 2XX : Success
+    SUCCESS: { isSuccess: true, code: 200, message: "Successed" },
 
-    //Connection, Transaction 등의 서버 오류
-    DB_ERROR: { isSuccess: false, code: 4000, message: "데이터 베이스 에러" },
-    SERVER_ERROR: { isSuccess: false, code: 4001, message: "서버 에러" },
+    // 3xx : form validation error
+    EMPTY_ID: { isSuccess: true, code: 300, message: "ID is required." },
+    EMPTY_PASSWORD: { isSuccess: true, code: 301, message: "Password is required." },
+    EMPTY_NAME: { isSuccess: true, code: 302, message: "User name is required." },
+    EMPTY_NICKNAME: { isSuccess: true, code: 303, message: "User nickname is required." },
+    EMPTY_ADDRESSIDX: { isSuccess: true, code: 304, message: "AddressIdx is required." },
+    EMPTY_ADDRETYPE: { isSuccess: true, code: 305, message: "Address type is required." },
+    EMPTY_INFO_TO_PATCH: { isSuccess: true, code: 306, message: "There is no info to update." },
+
+    LENGTH_ID: { isSuccess: true, code: 307, message: "User ID should be shorter then 20 charaters." },
+    LENGTH_PASSWORD: { isSuccess: true, code: 308, message: "User password should be longer than 6 and shorter then 20 charaters." },
+    LENGTH_NAME: { isSuccess: true, code: 309, message: "User name should be shorter then 24 charaters." },
+    LENGTH_NICKNAME: { isSuccess: true, code: 310, message: "User name should be shorter then 24 charaters." },
+
+    // 4xx : value validation error
+    REDUNDANT_ID: { isSuccess: false, code: 401, message: "It is a redundant ID." },
+    REDUNDANT_NICKNAME: { isSuccess: false, code: 402, message: "It is a redundant nickname." },
+    OUT_OF_RANGE_ADDRESSIDX: { isSuccess: false, code: 403, message: "It is not in range of addressIdx." },
+    OUT_OF_RANGE_USER_STATUS: { isSuccess: false, code: 404, message: "It is not in list of user status." },
+
+    NOT_EXIST_ID: { isSuccess: false, code: 405, message: "This ID is not exist." },
+    USER_STATUS_INACTIVE: { isSuccess: false, code: 406, message: "This account is inactive." },
+    USER_STATUS_WITHDRAWAL: { isSuccess: false, code: 407, message: "This account has been withdrawn." },
+
+    NOT_MATCHED_TOKEN_ID: { isSuccess: false, code: 408, message: "Tocken and user ID are not matched." },
+    NOT_MATCHED_PASSWORD: { isSuccess: false, code: 409, message: "It's wrong password." },
+
+    SAME_PASSWORD: { isSuccess: false, code: 410, message: "It's the same password." },
+    SAME_STATUS: { isSuccess: false, code: 411, message: "It's the same status." },
+
+    // 5XX : server error such as Connection, Transaction ...
+    DB_ERROR: { isSuccess: false, code: 500, message: "Database Error" },
+    SERVER_ERROR: { isSuccess: false, code: 501, message: "Server Error" },
 };

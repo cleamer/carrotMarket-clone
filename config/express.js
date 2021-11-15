@@ -15,6 +15,7 @@ module.exports = function () {
 
     app.use(cors());
     // app.use(express.static(process.cwd() + '/public'));
+    require("../src/app/User/userRoute")(app);
 
     return app;
 };
